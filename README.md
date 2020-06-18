@@ -15,7 +15,7 @@ The solution is simple, have an app that:
 
 But how do we know where the serial is in the hex file? 
 Unfortunately this is a manual process the first time. 
-You first create a #define SERIAL_NUM and set it to 0xFFF compile and save the hex file,
+You first create a #define SERIAL_NUM and set it to 0xFFFF compile and save the hex file,
 then set the serial number so something else, I usually use 0xABCD, once again compile and save the file.
 Now set the file names in "openFile.c" and run. "openFile.c" compares the hex files and returns a position in 
 the file where there is a difference. 
